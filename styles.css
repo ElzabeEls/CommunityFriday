@@ -1,13 +1,27 @@
+:root {
+  --white: #ffffff;
+  --stone-100: #f3e6d8;
+  --stone-150: #e4ded8;
+  --stone-600: #5f574e;
+  --stone-900: #302d2c;
+  --brown-800: #854632;
+  --rose-800: #7b284f;
+  --rose-50: #fff5fa;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f3e5d8;
+  background-color: var(--stone-100);
   margin: 0;
-  padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 5vw;
+  padding-right: 5vw;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: #64605c;
+  color: var(--stone-600);
   line-height: 1.6;
 }
 
@@ -17,10 +31,9 @@ body {
 }
 
 .recipe-card {
-  background-color: white;
+  background-color: var(--white);
   border-radius: 15px;
   padding: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .recipe-image {
@@ -34,59 +47,58 @@ h1 {
   font-family: "Young Serif", serif;
   font-weight: 400;
   font-style: normal;
-  margin: 0;       
-  padding: 0;  
-  color: #3a3734;
+  margin: 0;
+  padding: 0;
+  color: var(--stone-900);
 }
 
-
 .description {
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
 
 .prep-time {
-  background-color: #fff7fc;
+  background-color: var(--rose-50);
   padding: 30px;
   border-radius: 10px;
   margin: 0;
   height: auto;
 }
 
-.ingredients, .instructions {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #cec9c8;
+.ingredients,
+.instructions {
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--stone-150);
 }
 
-.ingredients, .instructions, .nutrition {
-    padding-top: 30px;
+.ingredients,
+.instructions,
+.nutrition {
+  padding-top: 30px;
 }
 
 .prep-time > h2 {
-  background-color: #fff7fc;
-  color: #9b1a52;
+  color: var(--rose-800);
   margin: 0;
   font-family: Arial, sans-serif;
-  font-size: 1.5rem;  /* Adjust as needed */
+  font-size: 1.5rem; /* Adjust as needed */
   font-weight: 700; /* Bold weight */
   line-height: 1.2; /* Slightly tighter line-height */
-  
 }
 
 .prep-time ul li::marker {
-  color: #9b1a52;
+  color: var(--rose-800);
 }
 
-
 h2 {
-  color: #944a1f;
+  color: var(--brown-800);
   padding-bottom: 10px;
-  margin-top: 20px; 
+  margin-top: 30px;
   font-family: "Young Serif", serif;
   font-weight: 400;
   font-style: normal;
-  margin: 0;        
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -97,7 +109,7 @@ ol {
 
 ul li::marker,
 ol li::marker {
-  color: #944a1f;
+  color: var(--brown-800);
   font-weight: 900;
 }
 
@@ -112,21 +124,19 @@ table {
   margin-top: 10px;
 }
 
-tr:nth-child(-n+3) {
-    border-bottom: 1px solid #cec9c8;
-  }
+tr:nth-child(-n + 3) {
+  border-bottom: 1px solid var(--stone-150);
+}
 
 td {
   padding: 8px;
 }
 
-td:nth-child(2) {
-    font-weight: bold;
-    color: #944a1f;
-  }
-  
+td:nth-child(1) {
+  padding-left: 30px;
+}
 
-.bold {
+td:nth-child(2) {
   font-weight: bold;
-  color: #3f3833;
+  color: var(--brown-800);
 }
